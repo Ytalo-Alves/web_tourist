@@ -1,101 +1,182 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-[#F5F4F0] w-full h-full lg:px-20 lg:py-20 px-10 py-10 items-center flex flex-col lg:items-center lg:justify-center">
+      <div className="max-w-[1120px] w-full text-start px-4 lg:px-0">
+        <h3 className="text-textHeading text-xs lg:text-base font-bold uppercase">
+          Sua proxima viagem
+        </h3>
+        <h1 className="mt-2 text-textPrimary text-2xl lg:text-3xl font-bold">
+          Conheça Busan
+        </h1>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      <img
+        src="/images/Image_01.png"
+        alt="Foto de um ponto turístico de Busan"
+        className="rounded-2xl max-w-[1120px] h-40 lg:h-[660px] mt-11"
+      />
+
+      <span className="text-center text-textSecondary text-xs px-2 lg:text-base font-normal italic mt-3 lg:mt-6">
+        Busan, a estrela em ascensão da Coreia do Sul, oferece de tudo, desde
+        churrascarias de primeira linha até tradicionais barracas de comida de
+        rua. Aqui
+        <br />, exploramos a segunda cidade da Coreia do Sul e descobrimos as
+        suas ofertas culinárias.
+      </span>
+
+      <div className="border border-b text-border w-[1120px] mt-6 lg:mt-11" />
+
+      <div className="max-w-[1120px] w-full text-start px-2 lg:px-0">
+        <h3 className="text-textHeading text-xs lg:text-base font-bold uppercase mt-6 lg:mt-16">
+          Para os amantes de história
+        </h3>
+        <h1 className="mt-2 text-textPrimary text-2xl lg:text-3xl font-bold">
+          Descubra 3 destinos imperdíveis em Busan
+        </h1>
+      </div>
+
+      <span className="text-justify text-textSecondary text-xs px-2 lg:text-base font-normal mt-3 lg:mt-6 max-w-[1120px]">
+        As atrações de Busan vão desde templos budistas centenários que
+        pontilham as montanhas e o litoral da cidade até praias imaculadas com
+        águas cristalinas. Esta cidade litorânea tem muitas coisas para fazer o
+        ano todo - as famílias podem passar o tempo em um aquário à beira-mar,
+        os compradores podem explorar bairros vibrantes e os amantes da natureza
+        podem desfrutar de longas caminhadas até mirantes panorâmicos. Os
+        santuários budistas que pontilham a costa e as montanhas de Busan têm
+        uma arquitetura impressionante que irá encantar os fotógrafos.
+      </span>
+
+      <img
+        src="/images/Image_02.png"
+        alt="Foto de um ponto turístico de Busan"
+        className="rounded-2xl w-[1120px] h-40 lg:h-[660px] mt-11"
+      />
+
+      <div className="max-w-[1120px] w-full text-start mt-6">
+        <h1 className="text-textPrimary text-2xl lg:text-3xl font-bold px-2 lg:px-0">
+          1. Templo Haedong Yonggungsa
+        </h1>
+      </div>
+      <span className="text-justify text-textSecondary text-xs px-2 lg:text-base font-normal mt-3 lg:mt-6 max-w-[1120px]">
+        O Templo Haedong Yonggungsa é um templo budista localizado no extremo
+        nordeste de Busan. Construído em 1376, é um dos poucos templos na Coreia
+        construídos à beira-mar – você pode desfrutar de vistas do Mar do Leste
+        de um lado e de belas montanhas do outro
+      </span>
+
+      <div className="max-w-[1120px] w-full text-start px-2 lg:px-0">
+        <h3 className="text-textSecondary text-xs lg:text-base font-bold mt-6 lg:mt-9">
+          Bom para:
+        </h3>
+        <a
+          href="https://exemplo.com/item1"
+          className="text-accentBlue font-bold"
+        >
+          Historia
+        </a>
+      </div>
+
+      <img
+        src="/images/Image_03.png"
+        alt="Foto de um ponto turístico de Busan"
+        className="rounded-2xl max-w-[1120px] h-40 lg:h-[660px] mt-4"
+      />
+
+      <div className="max-w-[1120px] w-full text-start mt-6">
+        <h1 className="text-textPrimary text-2xl lg:text-3xl font-bold px-2 lg:px-0">
+          2. Templo Beomeo-sa
+        </h1>
+      </div>
+      <span className="text-justify text-textSecondary text-xs px-2 lg:text-base font-normal mt-3 lg:mt-6 max-w-[1120px]">
+        O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele
+        está localizado no alto da borda leste da montanha Geumjeongsa e fica
+        distante da agitação da cidade. O Daeungjeon Hall do templo é um exemplo
+        bem preservado da arquitetura da Dinastia Joseon.
+      </span>
+
+      <div className="max-w-[1120px] w-full text-start px-2 lg:px-0">
+        <h3 className="text-textSecondary text-xs lg:text-base font-bold mt-6 lg:mt-9">
+          Bom para:
+        </h3>
+        <a
+          href="https://exemplo.com/item1"
+          className="text-accentBlue font-bold"
+        >
+          Historia
+        </a>
+      </div>
+
+      <img
+        src="/images/Image_04.png"
+        alt="Foto de um ponto turístico de Busan"
+        className="rounded-2xl max-w-[1120px] h-40 lg:h-[660px] mt-4"
+      />
+
+      <div className="max-w-[1120px] w-full text-start mt-6">
+        <h1 className="text-textPrimary text-2xl lg:text-3xl font-bold px-2 lg:px-0">
+          3. Parque Yongdusan
+        </h1>
+      </div>
+      <span className="text-justify text-textSecondary text-xs px-2 lg:text-base font-normal mt-3 lg:mt-6 max-w-[1120px]">
+        O Parque Yongdusan, localizado no centro de Busan, abriga alguns dos
+        monumentos mais importantes da cidade. Você pode ver vistas
+        espetaculares do topo da Torre Busan, de 120 metros de altura. O parque
+        tem 2 museus – confira os instrumentos musicais tradicionais no Museum
+        of World Folk Instruments e mais de 80 veleiros coreanos no Exhibition
+        Hall of World Model Boats.
+      </span>
+
+      <div className="max-w-[1120px] w-full text-start px-2 lg:px-0">
+        <h3 className="text-textSecondary text-xs lg:text-base font-bold mt-6 lg:mt-9">
+          Bom para:
+        </h3>
+        <div className="flex flex-col mb-20">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://exemplo.com/item1"
+            className="text-accentBlue font-bold"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Casais
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://exemplo.com/item1"
+            className="text-accentBlue font-bold"
           >
-            Read our docs
+            Famílias
+          </a>
+          <a
+            href="https://exemplo.com/item1"
+            className="text-accentBlue font-bold"
+          >
+            Orçamento
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <p className="text-justify text-textSecondary text-xs px-2 lg:text-base font-normal lg:mt-6 max-w-[1120px]">
+          As melhores coisas para fazer em Busan mostram a reputação da cidade
+          como um importante porto marítimo na Ásia. Frequentemente vista como a
+          essência da Coreia do Sul, você experimentará uma atmosfera única em
+          termos de diversidade étnica e cultural, já que a cidade recebe um
+          público cosmopolita o ano todo. 
+        </p>
+
+        <footer className="flex flex-row items-center justify-center mt-16">
+          Feito com
+          <svg
+            className="ml-1 mr-1"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 5.87524C15 10.2502 8.51312 13.7915 8.23687 13.9377C8.16406 13.9769 8.08268 13.9974 8 13.9974C7.91732 13.9974 7.83594 13.9769 7.76312 13.9377C7.48688 13.7915 1 10.2502 1 5.87524C1.00116 4.84789 1.40979 3.86294 2.13624 3.13648C2.86269 2.41003 3.84764 2.0014 4.875 2.00024C6.16563 2.00024 7.29562 2.55524 8 3.49337C8.70438 2.55524 9.83438 2.00024 11.125 2.00024C12.1524 2.0014 13.1373 2.41003 13.8638 3.13648C14.5902 3.86294 14.9988 4.84789 15 5.87524Z"
+              fill="#333333"
+            />
+          </svg>
+          pela Rocketseat
+        </footer>
+      </div>
     </div>
   );
 }
